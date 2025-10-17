@@ -3,42 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Anime List</title>
-        <link rel="icon" href="image/Miku_1.jpg">
-        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="style.css">
+        <title>Calculator</title>
     </head>
     <body>
-        <div id="Section1">
-            <h1>There are my favorite anime: </h1>
-            <h2>List:</h2>
+        <div class="calculator">
+            <div id="display"></div>
+            <div class="buttons">
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn op">+</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn op">-</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn op">*</button>
+                <button class="btn">0</button>
+                <button class="btn" id="Memory">M</button>
+                <button class="btn" id="clear">C</button>
+                <button class="btn op">/</button>
+                <button class="btn" id="equals">=</button>
+            </div>
+
         </div>
-        <div id="animeList">
-            <ul>
-                <li>Gotoubun</li>
-                <li>Yofukashi no Uta</li>
-                <li>SAO</li>
-            </ul>
+        <div class="hologram hidden">
+            <div class="holo-content">
+                <span id="holo-result"></span>
+                <button id="close-holo">X</button>
+            </div>
         </div>
-       
-        <div id="Section2">
-            <h1>There are my favorite character:</h1>
-            <details>
-                <summary>List:</summary>
-                <ol>
-                    <li>Miku</li>
-                    <li>Asuna</li>
-                    <li>Athansia</li>
-                </ol>
-            </details>
-        </div>
-        <nav>
-            <h2>Reference</h2>
-            <ol>
-                <li> <a href="#Section1">Anime</a> </li>
-                <li> <a href="#Section2">Character</a> </li>
-            </ol>
-        </nav>
-        <a class="button" href="https:/youtube.com">Youtube</a>
-        <footer>Cre: Liza Lam</footer>
+        <script src="script.js"></script>
     </body>
 </html>
