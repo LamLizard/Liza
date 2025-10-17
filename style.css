@@ -1,0 +1,75 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #0a0a0a 60%, #000);
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden; /* Không cho scroll */
+}
+
+.calculator {
+    width: 350px;
+    height: 550px;
+    background: black;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00ffff33;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 1s;
+}
+
+#display {
+    height: 70px;
+    background: #111;
+    border-radius: 12px;
+    text-align: right;
+    font-size: 28px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 10px #00ffff55;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(5, 15%);
+    gap: 10px;
+    flex-grow: 5px;
+    
+}
+
+.btn{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: black; 
+    color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px 2px #00fff7;
+    cursor: pointer;
+    background-image: url('image/Miku_2.png');
+    background-size: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-3px) scale(1.1);
+    background-color: #00fff7;
+    color: black;
+    border: #000000 2px solid;
+    box-shadow: 3px 3px 3px 1px #00fff7bb;
+}
+
+#equals {
+    grid-column: span 4;
+    height: 20%;
+    background-color: #00ffff;
+    color: black;
+    box-shadow: 4px 4px 4px 2px #00fff7;
+}
